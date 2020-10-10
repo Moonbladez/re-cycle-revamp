@@ -42,13 +42,13 @@ export class Navbar extends Component {
                 <NavbarWrapper >
                     <ul>
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                                <NavLink to="/" exact={true}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/tours">Our Tours</NavLink>
+                            <NavLink to="/tours" >Our Tours</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about">About</NavLink>
+                            <NavLink to="/about" >About</NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact">Contact Us</NavLink>
@@ -64,7 +64,7 @@ export class Navbar extends Component {
               <MobileNavbarWrapper className={this.state.active ? "open" : ""}>
                     <ul>
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/" exact={true}>Home</NavLink>
                         </li>
                         <li>
                             <NavLink to="/tours">Our Tours</NavLink>
