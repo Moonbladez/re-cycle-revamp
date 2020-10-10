@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Assistant', sans-serif;
+    color: #333333;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+    width: 90vw;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 4rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+
+
+h2 {
+    font-size: 1.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    width: 90vw;
+    margin: auto;
+    grid-column: span 12;
+    padding: 3rem;
+
+
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+    clip: auto !important;
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+    height: auto !important;
+    margin: auto !important;
+    overflow: visible !important;
+    width: auto !important;
+    white-space: normal !important;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    section {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 992px) {
+    section {
+        width: 70vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    section {
+        width: 60vw;
+    }
+
+}
+
+.open {
+    display: flex !important;
+    flex-direction: column;
 }
