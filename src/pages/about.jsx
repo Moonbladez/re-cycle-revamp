@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import Img from "react-cool-img";
 
 
 import { Jumbotron } from '../Components/Jumbotron'
@@ -28,7 +29,7 @@ class About extends Component {
 
                     <HistoryWrapper>
                         <HistoryImg>
-                            <img src="/images/about-img.jpg" alt="about re-cycle" />
+                            <Img src="/images/about-img.jpg" alt="about re-cycle" />
                         </HistoryImg>
                         <HistoryText>
                             <p>Steve & Peggy formed Re-Cycle out of a mutual love of biking and everything good for the environment. They met in a bicycle repair shop and got discussing the need for more bikes rather than cars around the city.</p>
@@ -58,7 +59,7 @@ class About extends Component {
                         {teamInfo.map((member) => {
                             return (
                                 <TeamCard key={uuidv4()}>
-                                    <img src={member.image} alt={`${member.name} - ${member.position}`}></img>
+                                    <Img src={member.image} alt={`${member.name} - ${member.position}`}/>
                                     <TeamInfo>
                                         <h3>{member.name}</h3>
                                         <p>{member.position}</p>
@@ -78,7 +79,7 @@ class About extends Component {
                         <h2>Re-Cycle Customers</h2>
                         <TestimonalWrapper>
                             <TestimonialBox>
-                                <div><img src="/images/ultron.jpg" alt="testimonail" /></div>
+                                <div><Img src="/images/ultron.jpg" alt="testimonail" /></div>
                                 <div>
                                     <q>Already booked my second tour with Re-Cycle. Very knowledgable tour guide Wanda, and I
                                 learnt so much about a city I have lived in all my life which I never knew.</q>
@@ -90,7 +91,7 @@ class About extends Component {
 
 
                             <TestimonialBox>
-                                <div><img src="/images/loki.jpg" alt="testimonail" /></div>
+                                <div><Img src="/images/loki.jpg" alt="testimonail" /></div>
                                 <div>
                                     <q>Highly recommended. Lovely day out for all the family</q>
                                 </div>

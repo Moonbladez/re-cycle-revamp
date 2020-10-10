@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Img from "react-cool-img";
 
 
 import styled from "styled-components"
@@ -16,20 +17,20 @@ export class Footer extends Component {
                             <li>
                                 <a href="http://www.faceook.com" target="_blank" rel="noopener noreferrer">
                                     <span className="sr-only">Link to Facebook</span>
-                                    <img src="/images/facebook.svg" alt="" />
+                                    <Img src="/images/facebook.svg" alt="" />
                                 </a> 
                             </li> 
                                 
                             <li>
                                 <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer">
                                     <span className="sr-only">Link to Twitter</span>
-                                    <img src="/images/twitter.svg" alt="" />
+                                    <Img src="/images/twitter.svg" alt="" />
                                 </a> 
                             </li> 
                             <li>
                                 <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
                                     <span className="sr-only">Link to Instagram</span>
-                                    <img src="/images/instagram.svg" alt="" />
+                                    <Img src="/images/instagram.svg" alt="" />
                                 </a> 
                             </li> 
                     </ul>        

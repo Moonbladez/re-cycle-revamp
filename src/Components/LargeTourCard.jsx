@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import Img from "react-cool-img";
 
 
 import { FaUsers, FaLanguage, FaClock, FaCalendarAlt } from "react-icons/fa"
@@ -17,7 +18,7 @@ export class LargeTourCard extends Component {
         return (
             <TourCard>
                 <CardTop>
-                    <img src={this.props.tour.img} alt={`a ${this.props.tour.name} tour`}></img>
+                    <Img src={this.props.tour.img} alt={`a ${this.props.tour.name} tour`}/>
                     <h3>{this.props.tour.name}</h3>
                 </CardTop>
                 <div>

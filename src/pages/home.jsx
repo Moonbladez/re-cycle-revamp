@@ -1,5 +1,7 @@
 import React from "react"
 import { Component } from "react";
+import Img from "react-cool-img";
+
 
 import { Layout } from "../Components/Layout/Layout"
 import { Jumbotron } from "../Components/Jumbotron"
@@ -55,7 +57,7 @@ class Home extends Component {
                         <h2>About Re-cycle</h2>
                         <AboutWrapper>
                             <div className="img-wrapper">
-                                <img src="/images/about-img.jpg" alt="" />
+                                <Img src="/images/about-img.jpg" alt="" />
                             </div>
                             <div>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eveniet animi modi voluptas quo, error, quod quaerat iure enim architecto deserunt nisi, explicabo doloremque non possimus inventore? Recusandae, dolore aperiam totam culpa quas non odio laborum eveniet ad tenetur nisi. Incidunt eos nulla magni eius. Quos aperiam totam a at.
