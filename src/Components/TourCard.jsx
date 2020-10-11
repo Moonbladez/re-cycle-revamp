@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom"
 import Img from "react-cool-img";
 
 
@@ -17,7 +18,7 @@ export class TourCard extends Component {
                 <CardContent>
                     <h4>{this.props.toursData.name}</h4>
                     <div>{this.props.toursData.description}</div>
-                    <a href="/tours">read more</a>
+                    <Link to="/tours">read more</Link>
 
                 </CardContent>
             </FeaturedToursCard>
